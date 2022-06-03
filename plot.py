@@ -72,7 +72,7 @@ def draw(x, train_loss, train_acc, test_acc, args):
 
     plt.tight_layout()
 
-    plt.savefig('fig1.pdf')
+    plt.savefig('fig3.pdf')
     plt.show()
 
 def main():

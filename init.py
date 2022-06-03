@@ -43,9 +43,10 @@ def init(args):
         
     # distribute
     array = glassNormalized.values
-    plot.boxplot(array)
-    plot.xlabel("Attribute Index")
-    plot.ylabel(("Quartile Ranges - Normalized "))
+    plot.boxplot(array, notch=True, sym='^', patch_artist=True, boxprops={'facecolor':'#FFD700'})
+    plot.xlabel("Index")
+    plot.ylabel(("Datasets Normalized "))
+    plot.title('Boxplot of Glass-Data')
     plot.savefig('./plots/boxplot.pdf')
     
     # data set
